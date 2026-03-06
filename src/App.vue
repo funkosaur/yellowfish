@@ -2,7 +2,7 @@
   <NavBar />
   <main>
     <HeroSection />
-    <section id="about" style="min-height: 100vh;"></section>
+    <AboutSection />
     <section id="skills" style="min-height: 100vh;"></section>
     <section id="experience" style="min-height: 100vh;"></section>
     <section id="projects" style="min-height: 100vh;"></section>
@@ -14,4 +14,5 @@
 <script setup>
 import NavBar from './components/NavBar.vue'
 import HeroSection from './components/HeroSection.vue'
+import AboutSection from './components/AboutSection.vue'
 </script>
