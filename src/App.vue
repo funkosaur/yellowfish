@@ -7,7 +7,7 @@
     <ExperienceSection />
     <ProjectsSection />
     <ValuesSection />
-    <section id="contact" style="min-height: 100vh;"></section>
+    <ContactSection />
   </main>
 </template>
 
@@ -19,4 +19,5 @@ import SkillsSection from './components/SkillsSection.vue'
 import ExperienceSection from './components/ExperienceSection.vue'
 import ProjectsSection from './components/ProjectsSection.vue'
 import ValuesSection from './components/ValuesSection.vue'
+import ContactSection from './components/ContactSection.vue'
 </script>
