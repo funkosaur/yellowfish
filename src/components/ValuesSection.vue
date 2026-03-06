@@ -2,10 +2,10 @@
   <section id="values" class="values section">
     <div class="container">
       <div class="section__header">
-        <span class="section__label">Values</span>
-        <h2 class="section__title">What I Stand For</h2>
+        <span class="section__label">Beyond the Code</span>
+        <h2 class="section__title">A Bit More About Me</h2>
         <p class="section__subtitle">
-          The principles I bring to every team and project I work on.
+          The things that shape who I am, on and off the clock.
         </p>
       </div>
 
@@ -25,11 +25,10 @@
 
       <div class="values__cta">
         <p class="values__cta-text">
-          These aren't just words on a page. I chose to apply to
-          <strong>Yellow Fish</strong> because your culture of collaboration,
-          curiosity, and high-quality digital craft mirrors how I already
-          approach my work. I want to grow alongside a team that shares
-          these values.
+          I chose to apply to <strong>Yellow Fish</strong> because your
+          culture of collaboration, curiosity, and high-quality digital craft
+          mirrors how I already approach my work. I want to grow alongside
+          a team that brings the same energy.
         </p>
       </div>
     </div>
@@ -38,50 +37,50 @@
 
 <script setup>
 import {
+  Trophy,
+  Dog,
+  Heart,
   Users,
   BookOpen,
-  Heart,
-  Palette,
-  MessageCircle,
   Zap,
 } from 'lucide-vue-next'
 
 const values = [
   {
-    title: 'Collaboration First',
+    title: 'Basketball',
+    icon: Trophy,
+    description:
+      'My go-to way to switch off. Whether it\'s a pickup game or shooting hoops solo, it keeps me competitive and reminds me that teamwork wins games.',
+  },
+  {
+    title: 'My Cocker Spaniel',
+    icon: Dog,
+    description:
+      'Nothing resets a long debugging session like a walk with my dog. She doesn\'t care about clean code, but she\'s great company.',
+  },
+  {
+    title: 'Time with My Wife',
+    icon: Heart,
+    description:
+      'She\'s my biggest supporter. Whether we\'re cooking, exploring somewhere new, or just relaxing at home, that time keeps everything in perspective.',
+  },
+  {
+    title: 'Inclusivity',
     icon: Users,
     description:
-      'I thrive in teams. Whether it\'s pair programming, stand-ups, or design reviews, I believe the best work comes from open communication and shared ownership.',
+      'I believe everyone deserves to feel heard and valued. Diverse perspectives lead to better solutions, and I always try to make space for them.',
   },
   {
     title: 'Always Learning',
     icon: BookOpen,
     description:
-      'I actively seek out new tools, frameworks, and best practices.',
-  },
-  {
-    title: 'Inclusive & Supportive',
-    icon: Heart,
-    description:
-      'I embrace respectful, inclusive ways of working. Everyone deserves to feel heard and valued, and diverse perspectives lead to better solutions.',
-  },
-  {
-    title: 'Craft & Quality',
-    icon: Palette,
-    description:
-      'I care deeply about the details. Clean code, polished interfaces, and accessible experiences aren\'t optional they\'re the standard I hold myself to.',
-  },
-  {
-    title: 'Clear Communication',
-    icon: MessageCircle,
-    description:
-      'I flag blockers early, ask questions when I\'m unsure, and keep the team informed. No one should be left guessing about where things stand.',
+      'I actively seek out new tools, frameworks, and best practices. Staying curious is what keeps this career exciting.',
   },
   {
     title: 'Positive Energy',
     icon: Zap,
     description:
-      'I bring enthusiasm and a proactive attitude to everything I do. Challenges are opportunities to learn, and setbacks are just part of the process.',
+      'I bring enthusiasm to everything I do. Challenges are opportunities to grow, and setbacks are just part of the process.',
   },
 ]
 </script>

@@ -32,7 +32,7 @@
         <div class="hero__role-wrapper" :class="{ visible: showRole }">
           <div class="hero__role-line" aria-hidden="true"></div>
           <p class="hero__role">
-            Junior Front-End Developer
+            Student Software Developer
           </p>
         </div>
         <p class="hero__tagline" :class="{ visible: showTagline }">
@@ -68,7 +68,7 @@
   <span class="code-key">loves</span>: [
     <span class="code-string">"Clean Code"</span>,
     <span class="code-string">"Cool UIs"</span>,
-    <span class="code-string">"Learning New Tech"</span>
+    <span class="code-string">"REST APIs"</span>
   ]
 };</code></pre>
         </div>
@@ -154,6 +154,7 @@ onMounted(() => {
     color.adjust($color-accent-light, $lightness: 18%) 100%
   );
   padding-top: $space-4xl;
+  padding-bottom: $space-4xl;
 
   // ---- Swimming fish background ----
   &__bg {
@@ -349,6 +350,7 @@ onMounted(() => {
   // ---- Code card visual ----
   &__visual {
     order: 2;
+    min-width: 0;
     opacity: 0;
     transform: translateY(40px) rotateX(5deg);
     transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -363,6 +365,7 @@ onMounted(() => {
     @include glass-card;
     overflow: hidden;
     border: 1px solid $color-border;
+    max-width: 100%;
 
     @include hover-lift;
   }
@@ -407,6 +410,8 @@ onMounted(() => {
     font-size: $font-size-sm;
     line-height: 1.8;
     overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
 
     @include mobile {
       font-size: $font-size-xs;

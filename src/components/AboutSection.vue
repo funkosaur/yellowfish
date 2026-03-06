@@ -18,16 +18,23 @@
             alongside my studies balancing both with the same dedication.
           </p>
           <p class="about__text">
-            My placement year opened my eyes to the full software lifecycle, from
-            building automated booking systems with Azure Functions, to containerising
-            apps with Docker on Raspberry Pi devices. I've worked across the stack, but
-            what excites me most is crafting interfaces and applications that people genuinely enjoy using.
+            My placement year opened my eyes to the full software lifecycle.
+            I built an automated booking system with Azure Functions and
+            containerised apps with Docker on Raspberry Pi devices. I've
+            worked across the stack, but what excites me most is crafting
+            interfaces and applications that people genuinely enjoy using.
           </p>
           <p class="about__text">
             I'm naturally curious, always picking up new tools and frameworks.
-            This website, for example, is my first time using <strong>Vue</strong> —
-            I built it specifically for this application to demonstrate that I can
-            adapt and learn quickly.
+            This website, for example, is my first time using <strong>Vue</strong>
+            I chose it because the role asked for it, so I figured the best
+            way to learn was to build something real.
+          </p>
+          <p class="about__text">
+            I'm looking for a role where I can bring that same energy,
+            somewhere I can contribute to real projects, keep growing as a
+            developer, and be part of a team that cares about the quality
+            of what they ship.
           </p>
         </div>
 
@@ -96,7 +103,7 @@ import { GraduationCap, MapPin, Briefcase, Sparkles } from 'lucide-vue-next'
     display: grid;
     grid-template-columns: 1fr;
     gap: $space-3xl;
-    align-items: start;
+    align-items: center;
 
     @include desktop {
       grid-template-columns: 1.2fr 1fr;
