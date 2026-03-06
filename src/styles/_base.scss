@@ -1,0 +1,173 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// ======================
+// RESET & BASE
+// ======================
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  @include mobile {
+    font-size: 15px;
+  }
+}
+
+body {
+  font-family: $font-body;
+  font-size: $font-size-base;
+  line-height: $line-height-normal;
+  color: $color-text;
+  background-color: $color-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+// ======================
+// TYPOGRAPHY DEFAULTS
+// ======================
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  color: $color-secondary;
+}
+
+h1 { font-size: $font-size-4xl; }
+h2 { font-size: $font-size-3xl; }
+h3 { font-size: $font-size-2xl; }
+h4 { font-size: $font-size-xl; }
+
+p {
+  line-height: $line-height-normal;
+  color: $color-text-light;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-primary-dark;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+// ======================
+// SELECTION
+// ======================
+::selection {
+  background: $color-primary;
+  color: $color-secondary;
+}
+
+// ======================
+// FOCUS
+// ======================
+:focus-visible {
+  outline: 3px solid $color-accent;
+  outline-offset: 2px;
+}
+
+// ======================
+// SCROLLBAR
+// ======================
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-text-muted;
+  border-radius: $border-radius-full;
+
+  &:hover {
+    background: $color-text-light;
+  }
+}
+
+// ======================
+// UTILITY CLASSES
+// ======================
+.sr-only {
+  @include sr-only;
+}
+
+.container {
+  @include container;
+}
+
+// ======================
+// SECTION SHARED STYLES
+// ======================
+.section {
+  @include section-padding;
+  position: relative;
+
+  &__header {
+    text-align: center;
+    margin-bottom: $space-3xl;
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $color-primary-dark;
+    margin-bottom: $space-sm;
+  }
+
+  &__title {
+    @include heading($font-size-3xl);
+    margin-bottom: $space-md;
+
+    @include mobile {
+      font-size: $font-size-2xl;
+    }
+  }
+
+  &__subtitle {
+    font-size: $font-size-md;
+    color: $color-text-light;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+}
+
+// ======================
+// ANIMATE ON SCROLL
+// ======================
+.animate-in {
+  @include fade-in-up;
+}
