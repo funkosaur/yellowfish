@@ -42,7 +42,7 @@ const navItems = [
   { name: 'Skills', url: '#skills', icon: Code2 },
   { name: 'Experience', url: '#experience', icon: Briefcase },
   { name: 'Projects', url: '#projects', icon: FolderGit2 },
-  { name: 'Values', url: '#values', icon: Heart },
+  { name: 'Personal', url: '#values', icon: Heart },
   { name: 'Contact', url: '#contact', icon: Mail },
 ]
 
